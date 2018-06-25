@@ -40,7 +40,10 @@ public class MainActivity extends AppCompatActivity implements  MainViewInterfac
     }
 
     private void setupViews(){
-        rvMoviess.setLayoutManager(new LinearLayoutManager(this));
+        LinearLayoutManager manager = new LinearLayoutManager(this);
+        rvMoviess.setLayoutManager(manager);
+        rvMoviess.setHasFixedSize(true);
+
     }
 
     private void getMovieList() {
