@@ -2,6 +2,7 @@ package com.example.thirumaleshila.mvpsimpleexample.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +39,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MoviesHold
         holder.tvOverview.setText(movieList.get(position).getOverview());
         holder.tvReleaseDate.setText(movieList.get(position).getReleaseDate());
         Glide.with(context).load("https://image.tmdb.org/t/p/w500/"+movieList.get(position).getPosterPath()).into(holder.ivMovie);
+        Log.i("hai","hai");
     }
 
     @Override
