@@ -1,5 +1,7 @@
 package com.example.thirumaleshila.mvpsimpleexample.network;
 
+import android.util.Log;
+
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
@@ -10,6 +12,7 @@ public class NetworkClient {
 
     public void NetworkClient(){
 
+        Log.i("hai","hai");
     }
 
     public static Retrofit getRetrofit(){
